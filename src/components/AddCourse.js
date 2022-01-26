@@ -76,9 +76,6 @@ export default function AddCourse() {
           <button
             type="submit"
             className="btn btn-primary"
-            onClick={() => {
-              setCheck(true);
-            }}
           >
             Add Course
           </button>
