@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/manage-courses/static/css/main.dfa106cd.css",
-    "main.js": "/manage-courses/static/js/main.99686623.js",
+    "main.js": "/manage-courses/static/js/main.fb2ad95f.js",
     "static/media/road_to_knowledge.png": "/manage-courses/static/media/road_to_knowledge.fb91b41262c4f62562b8.png",
     "index.html": "/manage-courses/index.html",
     "main.dfa106cd.css.map": "/manage-courses/static/css/main.dfa106cd.css.map",
-    "main.99686623.js.map": "/manage-courses/static/js/main.99686623.js.map"
+    "main.fb2ad95f.js.map": "/manage-courses/static/js/main.fb2ad95f.js.map"
   },
   "entrypoints": [
     "static/css/main.dfa106cd.css",
-    "static/js/main.99686623.js"
+    "static/js/main.fb2ad95f.js"
   ]
 }
