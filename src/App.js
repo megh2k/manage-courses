@@ -16,7 +16,7 @@ function App() {
       </div>
     <Routes>
       
-      <Route path = 'manage-courses/' element= {<Home />} />
+      <Route exact path = 'manage-courses/' element= {<Home />} />
       <Route path = 'manage-courses/all' element= {<AllCourses/>} />
       <Route path = 'manage-courses/add' element= {<AddCourse />} />
       <Route path = 'manage-courses/update/:id' element= {<EditCourse />} />
