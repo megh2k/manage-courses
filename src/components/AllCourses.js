@@ -38,7 +38,7 @@ export default function AllCourses() {
               <span className="spanColor">Course: </span> {item.course}
                   <i class="fas fa-trash delete" onClick = {() => deleteCourse(item._id)}></i>
 
-                  <Link to  = {'manage-courses/update/' + item._id}><i class="fas fa-edit edit"></i>
+                  <Link to  = {'/manage-courses/update/' + item._id}><i class="fas fa-edit edit"></i>
                   </Link>
             </li>
 
