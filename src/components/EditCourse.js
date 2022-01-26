@@ -13,6 +13,21 @@ export default function EditCourse() {
   let [pre_requisites, setpre_requisitesValue] = useState("");
   let [description, setdescriptionValues] = useState("");
 
+  useEffect(() =>{
+    loadData()
+  }, [])
+
+  let loadData = async() =>{
+    fetch("https://manage-course.herokuapp.com/" + id)
+    .then((res) => res.json())
+    .then((data) =>{
+      setcourseValue(data.course);
+      setprofessorValue(data.professor)
+      setpre_requisitesValue(data.pre_requisites)
+      setdescriptionValues(data.description)
+    })
+  }
+
   let onSubmit = (e) => {
     e.preventDefault();
     element = {
