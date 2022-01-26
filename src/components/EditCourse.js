@@ -4,10 +4,8 @@ import axios from "axios";
 
 export default function EditCourse() {
   let element;
-  let [check, setCheck] = useState(false);
   let {id} = useParams()
-
-  let {navigate} = useNavigate()
+  let [popup, setPopup] = useState(false);
 
 
   let [course, setcourseValue] = useState("");
@@ -81,9 +79,22 @@ export default function EditCourse() {
           <button
             type="submit"
             className="btn btn-primary"
+            onClick={() => {
+              setPopup(true);
+            }}
           >
             Edit Course
           </button>
+          {popup ? (
+            <div className="popup">
+              <div className="content">
+                <p>Course was successfully edited.</p>
+                <p><Link to = '/all' className="returnTo">Click here</Link> to return to courselist.</p>                
+              </div>
+            </div>
+          ) : (
+            ""
+          )}
         </form>
       </div>
     </div>

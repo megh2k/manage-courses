@@ -1,9 +1,11 @@
 import { React, useState } from "react";
-import {  useParams } from "react-router-dom";
+import {  Link } from "react-router-dom";
 import axios from "axios";
 
 export default function AddCourse() {
   let element;
+  let [popup, setPopup] = useState(false);
+
 
   let [course, setcourseValue] = useState("");
   let [professor, setprofessorValue] = useState("");
@@ -76,9 +78,22 @@ export default function AddCourse() {
           <button
             type="submit"
             className="btn btn-primary"
+            onClick={() => {
+              setPopup(true);
+            }}
           >
             Add Course
           </button>
+          {popup ? (
+            <div className="popup">
+              <div className="content">
+                <p>Course was successfully added.</p>
+                <p><Link to = '/all' className="returnTo">Click here</Link> to return to courselist.</p>                
+              </div>
+            </div>
+          ) : (
+            ""
+          )}
         </form>
       </div>
     </div>
