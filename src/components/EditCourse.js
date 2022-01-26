@@ -1,5 +1,5 @@
 import { React, useState } from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, useEffect } from "react-router-dom";
 import axios from "axios";
 
 export default function EditCourse() {
