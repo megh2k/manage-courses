@@ -24,7 +24,7 @@ export default function EditCourse() {
       description: description,
     };
     console.log(element);
-    axios.post("https://manage-course.herokuapp.com/update/" + id, element)
+    axios.post("/update/" + id, element)
     //  .then((res) => res.json(element))     
            
 
