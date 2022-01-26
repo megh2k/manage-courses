@@ -88,7 +88,7 @@ export default function AddCourse() {
             <div className="popup">
               <div className="content">
                 <p>Course was successfully added.</p>
-                <p><Link to = '/all' className="returnTo">Click here</Link> to return to courselist.</p>                
+                <p><Link to = '/manage-courses/all' className="returnTo">Click here</Link> to return to courselist.</p>                
               </div>
             </div>
           ) : (
